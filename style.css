@@ -63,7 +63,7 @@ ul {
     padding: 10px;
     border-radius: 5px;
     transition: transform 0.6s ease, color 0.6s ease;
-    font-family: 'bright_darling', sans-serif;
+    
 }
 .container:hover, .Community:hover, .Aboutme:hover {
     color: rgb(231, 33, 33);
@@ -81,6 +81,7 @@ ul {
 }
 .text {
     transition: text-shadow 0.3s ease;
+    font-family: 'bright_darling', sans-serif;
 }
 .text:hover {
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
