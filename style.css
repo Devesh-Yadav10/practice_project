@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Odachi';
+    src:url('font/Odachi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bright_darling';
+    src:url('font/bright-darling-sans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 60px;
+    color: rgb(255, 255, 255);
+    
+    background-color: rgb(38, 38, 38);
+    font-weight: 400;
+    flex-wrap: nowrap;
+}
+.header, .external_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'bright_darling', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+.external_links {
+   gap: 50px; 
+   font-size: 20px;
+   align-items: center;
+   font-weight: 400;
+
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    gap: 60px;
+    font-family: 'Odachi', sans-serif;
+    font-size: 30px;
+}
+.header {
+    background-image: url(images/404650.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px rgb(80, 79, 79);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: transform 0.6s ease, color 0.6s ease;
+}
+.container:hover, .Community:hover, .Aboutme:hover {
+    color: rgb(231, 33, 33);
+    text-shadow: 2px,2px,2px,2px white;
+    transition: color 0.6s ease-in-out, transform 0.6s ease;
+    transform: scale(1.5);
+    
+}
+.About {
+    font-size: 20px;
+    transition: text-shadow 0.3s ease;
+}
+.About:hover {
+    text-shadow: 1px 1px 2px rgb(60, 60, 60);
+}
+.text {
+    transition: text-shadow 0.3s ease;
+}
+.text:hover {
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(111, 111, 111);
+    padding: 20px;
+    border-radius: 5px;
+}
+.images {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.follow {
+    font-size: 30px;
+}
